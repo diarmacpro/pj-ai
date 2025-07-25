@@ -8,9 +8,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
   <body class="bg-body-tertiary">
-    <div class="container mt-3">
-        <input type="text" class="form-control form-control-lg shadow-none mb-2">
-        <textarea class="form-control form-control-lg shadow-none" rows="10"></textarea>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+          <input type="text" class="form-control form-control-lg shadow-none mb-2">
+          <textarea class="form-control form-control-lg shadow-none mb-2" rows="10"></textarea>
+          <button class="btn btn-primary w-100">Kirim</button>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-3">
+          ...
+        </div>
+        <div class="col-9">
+          <div class="border">
+
+<nav class="navbar bg-body-tertiary">
+  <form class="container-fluid justify-content-start">
+            <!-- As a link -->
+<button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+  </form>
+</nav>
+
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.11.0/dist/axios.min.js" integrity="sha256-BA81LP1os6XfLCoGGW8QArXABI+U4VNDWvhormFxWOk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" integrity="sha256-qXBd/EfAdjOA2FGrGAG+b3YBn2tn5A6bhz+LSgYD96k=" crossorigin="anonymous"></script>
